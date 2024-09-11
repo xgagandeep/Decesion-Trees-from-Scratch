@@ -2,34 +2,38 @@
 
 # Decision Trees from Scratch
 
-This repository provides an implementation of decision trees from scratch using Python. The implementation is designed to demonstrate the core concepts of decision trees, including entropy, information gain, and recursive tree building, without relying on specialized machine learning libraries.
+**Repository:** [xgagandeep/Decision-Trees-from-Scratch](https://github.com/xgagandeep/Decision-Trees-from-Scratch)  
+**Date:** 2020  
+**Language:** Python  
+**Libraries:** NumPy, pandas, scikit-learn
 
-## Project Overview
+## Overview
 
-The notebook `Decision Trees.ipynb` implements a basic decision tree classifier from scratch. The key steps involved include:
-
-1. **Data Preprocessing**: Cleaning and preparing the dataset for training. This includes handling missing values and encoding categorical variables.
-
-2. **Entropy Calculation**: Computing the entropy of the dataset, which is a measure of impurity or disorder.
-
-3. **Information Gain**: Calculating the information gain for each feature to determine the best feature to split on.
-
-4. **Tree Construction**: Building the decision tree recursively based on the information gain and stopping criteria.
-
-5. **Prediction**: Using the constructed decision tree to make predictions on new data.
-
-6. **Evaluation**: Comparing the performance of the custom decision tree implementation with the Scikit-Learn DecisionTreeClassifier and RandomForestClassifier.
+This project implements a decision tree algorithm from scratch in Python. It uses basic principles of decision trees to classify data based on certain features. The project also includes a comparison with scikit-learn's `DecisionTreeClassifier` and `RandomForestClassifier`.
 
 ## Features
 
-- **Custom Decision Tree**: A decision tree classifier implemented from scratch.
-- **Data Preprocessing**: Includes handling missing values and encoding categorical features.
-- **Entropy and Information Gain**: Functions to calculate entropy and information gain for decision tree splits.
-- **Evaluation**: Comparison with Scikit-Learn's DecisionTreeClassifier and RandomForestClassifier.
+- **Data Preparation**: Loads and preprocesses data from a CSV file.
+- **Entropy Calculation**: Implements entropy calculation to measure the impurity of the dataset.
+- **Information Gain**: Computes information gain to determine the best feature to split on.
+- **Decision Tree Training**: Trains a decision tree classifier from scratch.
+- **Prediction**: Predicts classes for new data based on the trained decision tree.
+- **Comparison**: Compares the custom decision tree implementation with scikit-learn's built-in classifiers.
 
-## Getting Started
+## How It Works
 
-To run the notebook and explore the implementation, follow these steps:
+1. **Data Loading**: Loads data from a CSV file and preprocesses it by encoding categorical features and handling missing values.
+2. **Entropy Calculation**: Defines a function to calculate entropy for a given feature.
+3. **Splitting Data**: Implements a function to split the dataset based on a feature and its value.
+4. **Training**: Implements the decision tree algorithm, including training and node splitting.
+5. **Prediction**: Defines a function to predict the class of new data based on the decision tree.
+6. **Comparison**: Uses scikit-learn's decision tree and random forest classifiers for comparison.
+
+## Files
+
+- `Decision Trees.ipynb`: Jupyter Notebook containing the implementation of the decision tree algorithm from scratch and comparisons with scikit-learn classifiers.
+
+## How to Use
 
 1. Clone this repository:
    ```bash
@@ -46,27 +50,8 @@ To run the notebook and explore the implementation, follow these steps:
    jupyter notebook Decision\ Trees.ipynb
    ```
 
-4. Follow the instructions in the notebook to run the code and understand the decision tree implementation.
-
-## Requirements
-
-Ensure you have Python and the following libraries installed:
-- NumPy
-- pandas
-- scikit-learn
-
-You can install the required libraries using:
-```bash
-pip install numpy pandas scikit-learn
-```
-
-## Example
-
-An example of how to use the decision tree implementation to train on a dataset and make predictions is provided in the notebook.
+4. Run the cells in the notebook to see the decision tree algorithm in action.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-
-Feel free to modify or extend this README based on additional details or requirements!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
